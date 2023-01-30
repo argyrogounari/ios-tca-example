@@ -13,10 +13,17 @@
 		26D005432987AB2000A19B7B /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D005422987AB2000A19B7B /* Tests_macOSLaunchTests.swift */; };
 		26D005442987AB2000A19B7B /* TCAExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D0051C2987AB1D00A19B7B /* TCAExampleApp.swift */; };
 		26D005452987AB2000A19B7B /* TCAExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D0051C2987AB1D00A19B7B /* TCAExampleApp.swift */; };
-		26D005462987AB2000A19B7B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D0051D2987AB1D00A19B7B /* ContentView.swift */; };
-		26D005472987AB2000A19B7B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D0051D2987AB1D00A19B7B /* ContentView.swift */; };
 		26D005482987AB2000A19B7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26D0051E2987AB2000A19B7B /* Assets.xcassets */; };
 		26D005492987AB2000A19B7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26D0051E2987AB2000A19B7B /* Assets.xcassets */; };
+		26D0055A2987ABB100A19B7B /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D005592987ABB100A19B7B /* Counter.swift */; };
+		26D0055C2987ABD600A19B7B /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D0055B2987ABD600A19B7B /* Welcome.swift */; };
+		26D0055F2987ABEE00A19B7B /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D0055E2987ABEE00A19B7B /* CounterView.swift */; };
+		26D005622987AC8000A19B7B /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 26D005612987AC8000A19B7B /* ComposableArchitecture */; };
+		26D005652987ACBF00A19B7B /* CombineSchedulers in Frameworks */ = {isa = PBXBuildFile; productRef = 26D005642987ACBF00A19B7B /* CombineSchedulers */; };
+		26D005682987AD5100A19B7B /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 26D005672987AD5100A19B7B /* ComposableArchitecture */; };
+		26D0056A2987AD9300A19B7B /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D005692987AD9300A19B7B /* App.swift */; };
+		26D0056C2987ADCD00A19B7B /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D0056B2987ADCD00A19B7B /* WelcomeView.swift */; };
+		26D0056F2987AEF500A19B7B /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 26D0056E2987AEF500A19B7B /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +45,6 @@
 
 /* Begin PBXFileReference section */
 		26D0051C2987AB1D00A19B7B /* TCAExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAExampleApp.swift; sourceTree = "<group>"; };
-		26D0051D2987AB1D00A19B7B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		26D0051E2987AB2000A19B7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26D005232987AB2000A19B7B /* TCAExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCAExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D005292987AB2000A19B7B /* TCAExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCAExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +55,11 @@
 		26D0053C2987AB2000A19B7B /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D005402987AB2000A19B7B /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		26D005422987AB2000A19B7B /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		26D005592987ABB100A19B7B /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		26D0055B2987ABD600A19B7B /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
+		26D0055E2987ABEE00A19B7B /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		26D005692987AD9300A19B7B /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		26D0056B2987ADCD00A19B7B /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +67,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26D005652987ACBF00A19B7B /* CombineSchedulers in Frameworks */,
+				26D005622987AC8000A19B7B /* ComposableArchitecture in Frameworks */,
+				26D0056F2987AEF500A19B7B /* ComposableArchitecture in Frameworks */,
+				26D005682987AD5100A19B7B /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,8 +112,9 @@
 		26D0051B2987AB1D00A19B7B /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				26D0055D2987ABE100A19B7B /* Views */,
+				26D005582987ABA400A19B7B /* Stores */,
 				26D0051C2987AB1D00A19B7B /* TCAExampleApp.swift */,
-				26D0051D2987AB1D00A19B7B /* ContentView.swift */,
 				26D0051E2987AB2000A19B7B /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -141,6 +157,25 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		26D005582987ABA400A19B7B /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				26D005592987ABB100A19B7B /* Counter.swift */,
+				26D0055B2987ABD600A19B7B /* Welcome.swift */,
+				26D005692987AD9300A19B7B /* App.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		26D0055D2987ABE100A19B7B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				26D0055E2987ABEE00A19B7B /* CounterView.swift */,
+				26D0056B2987ADCD00A19B7B /* WelcomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,6 +192,12 @@
 			dependencies = (
 			);
 			name = "TCAExample (iOS)";
+			packageProductDependencies = (
+				26D005612987AC8000A19B7B /* ComposableArchitecture */,
+				26D005642987ACBF00A19B7B /* CombineSchedulers */,
+				26D005672987AD5100A19B7B /* ComposableArchitecture */,
+				26D0056E2987AEF500A19B7B /* ComposableArchitecture */,
+			);
 			productName = "TCAExample (iOS)";
 			productReference = 26D005232987AB2000A19B7B /* TCAExample.app */;
 			productType = "com.apple.product-type.application";
@@ -249,6 +290,10 @@
 				Base,
 			);
 			mainGroup = 26D005162987AB1D00A19B7B;
+			packageReferences = (
+				26D005602987AC8000A19B7B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				26D005632987ACBF00A19B7B /* XCRemoteSwiftPackageReference "combine-schedulers" */,
+			);
 			productRefGroup = 26D005242987AB2000A19B7B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -299,8 +344,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26D005462987AB2000A19B7B /* ContentView.swift in Sources */,
+				26D0055C2987ABD600A19B7B /* Welcome.swift in Sources */,
 				26D005442987AB2000A19B7B /* TCAExampleApp.swift in Sources */,
+				26D0056A2987AD9300A19B7B /* App.swift in Sources */,
+				26D0055A2987ABB100A19B7B /* Counter.swift in Sources */,
+				26D0055F2987ABEE00A19B7B /* CounterView.swift in Sources */,
+				26D0056C2987ADCD00A19B7B /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +357,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26D005472987AB2000A19B7B /* ContentView.swift in Sources */,
 				26D005452987AB2000A19B7B /* TCAExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -691,6 +739,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		26D005602987AC8000A19B7B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = exactVersion;
+				version = 0.39.0;
+			};
+		};
+		26D005632987ACBF00A19B7B /* XCRemoteSwiftPackageReference "combine-schedulers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/combine-schedulers";
+			requirement = {
+				kind = exactVersion;
+				version = 0.7.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		26D005612987AC8000A19B7B /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26D005602987AC8000A19B7B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		26D005642987ACBF00A19B7B /* CombineSchedulers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26D005632987ACBF00A19B7B /* XCRemoteSwiftPackageReference "combine-schedulers" */;
+			productName = CombineSchedulers;
+		};
+		26D005672987AD5100A19B7B /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26D005602987AC8000A19B7B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		26D0056E2987AEF500A19B7B /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26D005602987AC8000A19B7B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 26D005172987AB1D00A19B7B /* Project object */;
 }

@@ -6,12 +6,27 @@
 //
 
 import SwiftUI
+import Combine
+import ComposableArchitecture
 
 @main
 struct TCAExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                WelcomeView(
+                    store: Store(
+                        initialState: AppState(
+                            welcome: WelcomeState(),
+                            counter: CounterState()
+                        ),
+                        reducer: appReducer,
+                        environment: AppEnvironment(
+                            value: CurrentValueSubject<Int, Never>(0)
+                        )
+                    )
+                )
+            }
         }
     }
 }
