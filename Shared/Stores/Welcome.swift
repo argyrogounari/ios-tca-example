@@ -19,8 +19,8 @@ enum WelcomeAction: Equatable {
     case onAppear
     case fetchPreviousValue
     case fetchPreviousValueResponse(Result<Int, APIError>)
-    case updateStateValue(Int)
     case updateEnvValue(Int)
+    case updateStateValue(Int)
     case welcomeTapped
     case dismissTapped
 }
@@ -38,22 +38,22 @@ let welcomeReducer = Reducer<WelcomeState, WelcomeAction, WelcomeEnvironment> { 
             state.isViewFirstAppear = false
             return Effect.concatenate([
                 Effect(value: .fetchPreviousValue),
-                environment.value.map(WelcomeAction.updateEnvValue).eraseToEffect()
+                environment.value.map(WelcomeAction.updateStateValue).eraseToEffect()
             ])
         }
-        return environment.value.map(WelcomeAction.updateEnvValue).eraseToEffect()
+        return environment.value.map(WelcomeAction.updateStateValue).eraseToEffect()
     case .fetchPreviousValue:
         return environment.fetchPreviousValueAPICall()
             .receive(on: environment.mainQueue).catchToEffect().map(WelcomeAction.fetchPreviousValueResponse)
     case let .fetchPreviousValueResponse(.success(newValue)):
         state.value = newValue
-        return Effect(value: .updateStateValue(newValue))
+        return Effect(value: .updateEnvValue(newValue))
     case .fetchPreviousValueResponse(.failure):
         return .none
-    case let .updateStateValue(newValue):
+    case let .updateEnvValue(newValue):
         environment.value.value = newValue
         return .none
-    case let .updateEnvValue(newValue):
+    case let .updateStateValue(newValue):
         state.value = newValue
         return .none
     case .welcomeTapped:
